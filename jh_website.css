@@ -1,0 +1,101 @@
+body{
+    margin: 0;
+    padding:0;
+}
+/*Page Title*/
+.title{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0em 2em;
+}
+img{
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+}
+img{
+    animation-iteration-count: 1;
+    animation-name: roll;
+    animation-play-state: running;
+    animation-duration: 10s;
+}
+@keyframes roll{
+    from{
+        transform: scale(0.0);
+     }
+     to{
+        transform: scale(1);
+     }
+  }
+/*Navigation Bar*/
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: grey;
+    color: white;
+}
+.navbar ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.navbar li{
+    list-style: none;
+}
+
+.navbar a{
+    text-decoration: none;
+    color:white;
+    padding: 1rem;
+    display: block;
+}
+
+a:hover{
+    background-color: lightgray;
+}
+
+/*About Me Content*/
+
+.container{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    margin: 2em;
+    padding: 2em;
+    gap: 2em;
+}
+
+.aboutMe-container{
+    display: flex;
+    align-items: center;
+    background-color: beige;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px gray;
+}
+
+.aboutMe{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+.skills-container{
+    display: grid;
+    align-items: center;
+    background-color: beige;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 2px gray;
+}
+.skills{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 2em;
+}
+
+
+
